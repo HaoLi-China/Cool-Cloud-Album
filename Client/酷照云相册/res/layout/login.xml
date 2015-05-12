@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/login_lay"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/login"
+	>
+	<!--
+		padding 内边距 layout_margin 外边距 android:layout_alignParentTop
+		布局的位置是否处于顶部
+	-->
+    <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<ImageView android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/help1"/>
+    </LinearLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="20sp"
+		android:layout_margin="20sp" android:layout_weight="4">
+
+		<!-- 账号 -->
+		<TextView android:id="@+id/tv_email" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:layout_marginTop="5sp" android:layout_marginRight="5sp"
+			android:text="@string/login_email" />
+		<EditText android:id="@+id/et_email" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="@string/login_uemail"
+			android:layout_below="@id/tv_email" android:singleLine="true"
+			android:layout_marginTop="2sp" android:inputType="text" />
+
+
+		<!-- 密码 text -->
+		<TextView android:id="@+id/tv_pass" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/et_email"
+			android:layout_marginTop="5sp" android:layout_marginRight="5sp"
+			android:text="@string/login_pass" />
+		<EditText android:id="@+id/et_pass" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@id/tv_pass"
+			android:hint="@string/login_upass" android:password="true"
+			android:singleLine="true" android:inputType="textPassword"
+			android:layout_marginTop="2sp" />
+		<!-- 登录button -->
+		<CheckBox android:id="@+id/cb_rember" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/et_pass"
+			android:layout_marginTop="5sp" android:layout_marginRight="5sp"
+			android:text="@string/login_rember" />
+
+		<CheckBox android:id="@+id/cb_auto" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/et_pass"
+			android:layout_alignRight="@id/et_pass" android:layout_toRightOf="@+id/cb_rember"
+			android:layout_marginTop="5sp" android:layout_marginRight="10sp"
+			android:text="@string/login_auto" />
+
+
+		<Button android:id="@+id/bt_go" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/cb_auto"
+			android:layout_alignRight="@id/cb_auto" android:layout_marginRight="30sp"
+			android:background="@drawable/login_go" />
+
+		<TextView android:id="@+id/tv_nonum" android:text="@string/login_nonum"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/bt_go" android:layout_marginLeft="15dp"
+			android:textColor="#FFFFDD" />
+		<TextView android:id="@+id/tv_link" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/bt_go"
+			android:layout_toRightOf="@id/tv_nonum" android:textColorLink="#FFFF66CC" />
+	</RelativeLayout>
+
+</LinearLayout>

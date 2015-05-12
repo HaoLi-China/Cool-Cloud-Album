@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, WelcomView!</string>
+    <string name="app_name">酷照云相册</string>
+    <string name="label1">CameraView</string>
+    <string name="sdcarderror">※请插入SD卡※</string>
+    <string name="searcherror">※不存在该相册※</string>
+     <string name="saving">※照片存储中...※</string>
+     
+     <string name="login">Login</string>
+	<string name="register">Register</string>
+	<string name="share">Share</string>
+	<string name="cloud">cloud</string>
+
+	<string name="comein">进入登录相册</string>
+
+
+	<!--登录界面或登录配置文件用到的string -->
+	<string name="login_email">邮箱：</string>
+	<string name="login_uemail">Email</string>
+	<string name="login_pass">密码：</string>
+	<string name="login_upass">6-16字母数字</string>
+	<string name="login_rember">记住密码</string>
+	<string name="login_auto">自动登录</string>
+	<string name="login_nonum">没有账号？</string>
+	<string name="login_link">注册</string>
+	<string name="login_loging">登录中.......</string>
+	<string name="login_autoing">自动登录中......</string>
+	<string name="login_nextact">进入注册界面......</string>
+	<string name="login_goshare">进入云相册......</string>
+	<string name="login_show1">邮箱不合法</string>
+	<string name="login_show2">密码不合法</string>
+	<string name="login_show3">帐号不存在</string>
+	<string name="login_show4">密码错误</string>
+	<string name="login_show5">登录出错</string>
+	<string name="login_show6">网络错误</string>
+	<string name="login_show7">登录成功</string>
+	<string name="login_show8">自动登录出错</string>
+	<string name="login_show9">自动登录成功</string>
+
+<!-- 注册界面或注册配置文件中用到的string -->
+	<string name="register_new_email">用户名：</string>
+	<string name="register_new_uemail">合法邮箱</string>
+	<string name="register_new_name">昵称：</string>
+	<string name="register_new_uname">4-10字符（3-5汉字）</string>
+	<string name="register_new_pass">登录密码：</string>
+	<string name="register_new_upass">6-16字母数字</string>
+	<string name="register_again_pass">确认密码：</string>
+	<string name="register_again_upass">再次输入密码</string>
+	<string name="register_show1">邮箱不合法</string>
+	<string name="register_show2">昵称不合法</string>
+	<string name="register_show3">密码不合法</string>
+	<string name="register_show4">对不起，您两次输入的密码不一致，请重新输入</string>
+	<string name="register_show5">用户已存在</string>
+	<string name="register_show6">注册出错</string>
+	<string name="register_show7">网络错误</string>
+	<string name="register_show8">注册成功</string>
+	<string name="register_resing">注册中........</string>
+	<string name="register_goshare">进入云相册......</string>
+	
+	<!-- 用户登录进入share或share配置用到的string -->
+	<string name="share_backup">备份相册相片</string>
+	<string name="share_gocloud">浏览云端相册</string>
+
+	<!-- 用户云相册下文件夹列表显示中用到的string -->
+	<string name="webfl_loading">加载中......</string>
+    <string name="upload">上传中......</string>
+	<!-- 云相册或者云相册配置文件中用到的string -->
+	<string name="cloud_getnum">界面加载中</string>
+
+
+	<!-- 都可以用到中用到的string或者Dialog中用到的string -->
+	<string name="web_error">网络错误</string>
+	<string name="dialog_nofile">是否删除此网络相册以及下面所有文件(建议把下面的文件下载备份)</string>
+	<string name="dialog_newfile">输入新建的网络相册文件名</string>
+	<string name="dialog_newtext">2-8字符（1-4汉字）</string>
+    <string name="dialog_filename">选择你要上传的相册文件夹</string>
+	
+</resources>

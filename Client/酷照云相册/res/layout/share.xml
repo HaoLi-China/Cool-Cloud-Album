@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/sharechoose">
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/help0" />
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingLeft="20dip"
+		android:paddingRight="20dip" android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip">
+		<TextView android:id="@+id/tv_suname" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:textSize="20dip" android:textColor="#FFFF11" />
+		<Button android:id="@+id/bt_backup" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="30dip"
+			android:background="@drawable/bt_backup" android:layout_below="@id/tv_suname" />
+
+		<Button android:id="@+id/bt_gocloud" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:background="@drawable/bt_cloud" android:layout_below="@id/bt_backup" />
+	</RelativeLayout>
+</LinearLayout>

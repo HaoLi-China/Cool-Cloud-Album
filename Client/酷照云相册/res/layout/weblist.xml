@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/cloudalbum">
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/help0" />
+	<TextView android:id="@+id/tv_name" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="20dip"
+		android:textColor="#C0C0B6" android:gravity="center" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dip"
+		android:layout_marginRight="20dip" android:layout_marginLeft="20dip">
+		<TextView android:id="@+id/tv_nocg" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="系统默认"
+			android:textSize="20dip" android:textColor="#C0C0B6"
+			android:visibility="invisible"></TextView>
+		<ListView android:id="@+id/lv_nocgfile" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="#c0c0c0"
+			android:layout_below="@id/tv_nocg" android:layout_marginTop="2dip"></ListView>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dip"
+		android:layout_marginRight="20dip" android:layout_marginLeft="20dip">
+		<TextView android:id="@+id/tv_cg" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:text="用户自定义" android:textSize="20dip" android:textColor="#C0C0B6"
+			android:visibility="invisible"></TextView>
+		<Button android:id="@+id/bt_add" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:visibility="invisible" android:background="@drawable/newfile"></Button>
+		<ListView android:id="@+id/lv_cgfile" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/bt_add"
+			android:background="#c0c0c0" android:layout_marginTop="2dip"></ListView>
+	</RelativeLayout>
+
+
+</LinearLayout>

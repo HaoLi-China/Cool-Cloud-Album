@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/register_lay" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/register">
+
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/help2" />
+	</LinearLayout>
+
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="20sp"
+		android:layout_margin="20sp">
+
+		<!-- 邮箱 -->
+		<TextView android:id="@+id/tv_new_email"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_marginTop="5sp"
+			android:layout_marginRight="5sp" android:text="@string/register_new_email" 
+			android:layout_weight="2"/>
+
+		<EditText android:id="@+id/et_new_email"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:hint="@string/register_new_uemail" android:layout_below="@id/tv_new_email"
+			android:singleLine="true" android:layout_marginTop="2sp"
+			android:inputType="text" />
+
+		<!-- 昵称，用于显示 -->
+		<TextView android:id="@+id/tv_new_name" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="5sp"
+			android:layout_below="@id/et_new_email" android:layout_marginRight="5sp"
+			android:text="@string/register_new_name" />
+
+		<EditText android:id="@+id/et_new_name" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="@string/register_new_uname"
+			android:layout_below="@id/tv_new_name" android:singleLine="true"
+			android:layout_marginTop="2sp" android:inputType="text" />
+
+		<!-- 密码 text -->
+		<TextView android:id="@+id/tv_new_pass" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/et_new_name"
+			android:layout_marginTop="5sp" android:layout_marginRight="5sp"
+			android:text="@string/register_new_pass" />
+		<EditText android:id="@+id/et_new_pass" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@id/tv_new_pass"
+			android:hint="@string/register_new_upass" android:password="true"
+			android:singleLine="true" android:inputType="textPassword"
+			android:layout_marginTop="2sp" />
+
+		<!-- 密码 二次 -->
+		<TextView android:id="@+id/tv_again_pass"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/et_new_pass" android:layout_marginTop="5sp"
+			android:layout_marginRight="5sp" android:text="@string/register_again_pass" />
+		<EditText android:id="@+id/et_again_pass"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/tv_again_pass" android:hint="@string/register_again_upass"
+			android:password="true" android:singleLine="true" android:inputType="textPassword"
+			android:layout_marginTop="2sp" />
+		<!-- 注册按钮 -->
+		<Button android:id="@+id/bt_regs" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/et_again_pass"
+			android:layout_alignRight="@id/et_again_pass"
+			android:layout_marginTop="6sp" android:layout_marginRight="40sp"
+			android:background="@drawable/register_go" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+>
+
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  />
+  
+<Gallery 
+  android:id="@+id/button_gallery"
+  android:layout_centerInParent="true"
+  android:layout_width="320dp"
+  android:layout_height="wrap_content"
+/>
+
+<Button 
+  android:id="@+id/record"
+  android:background="@drawable/record1"
+android:layout_width="80dp" 
+android:layout_height="80dp"
+android:layout_alignParentBottom="true"
+android:layout_alignParentLeft="true"
+/>
+
+<Button 
+android:id="@+id/play"
+ android:background="@drawable/start1"
+android:layout_width="80dp" 
+android:layout_height="80dp"
+android:layout_alignParentBottom="true"
+android:layout_alignParentRight="true"
+/>
+
+<Button 
+android:id="@+id/stop"
+ android:background="@drawable/stop1"
+android:layout_width="80dp" 
+android:layout_height="80dp"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+/>
+
+<Button 
+ android:id="@+id/rotate"
+ android:background="@drawable/rotate"
+android:layout_width="80dp" 
+android:layout_height="80dp"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+/>
+  
+</RelativeLayout>

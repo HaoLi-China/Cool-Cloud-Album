@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="camera"
+  id="myeclipse.1334046917936"
+  context-root="/camera"
+  j2ee-spec="5.0"
+  archive="camera.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

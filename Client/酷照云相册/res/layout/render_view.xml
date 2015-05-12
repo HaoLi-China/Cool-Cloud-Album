@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<android.app.util.MyImage 
+	android:id="@+id/myImage"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+		                   />
+		                   
+<SeekBar android:id="@+id/r_seekbar"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="320dp"
+android:progressDrawable="@drawable/seekbar_rgba"
+android:thumb="@drawable/thumb_rgba"
+android:thumbOffset="0dp"
+android:max="100" 
+/>
+
+<ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_toLeftOf="@id/r_seekbar"
+android:layout_alignBottom ="@id/r_seekbar"
+android:background="@drawable/r_icon"
+/>
+
+<SeekBar android:id="@+id/g_seekbar"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="360dp"
+android:progressDrawable="@drawable/seekbar_rgba"
+android:thumb="@drawable/thumb_rgba"
+android:thumbOffset="0dp"
+android:max="100" 
+/>
+
+<ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_toLeftOf="@id/g_seekbar"
+android:layout_alignBottom ="@id/g_seekbar"
+android:background="@drawable/g_icon"
+/>
+
+ <SeekBar android:id="@+id/b_seekbar"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="400dp"
+android:progressDrawable="@drawable/seekbar_rgba"
+android:thumb="@drawable/thumb_rgba"
+android:thumbOffset="0dp"
+android:max="100" 
+/>
+
+<ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_toLeftOf="@id/b_seekbar"
+android:layout_alignBottom ="@id/b_seekbar"
+android:background="@drawable/b_icon"
+/>
+
+<SeekBar android:id="@+id/a_seekbar"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="440dp"
+android:progressDrawable="@drawable/seekbar_rgba"
+android:thumb="@drawable/thumb_rgba"
+android:thumbOffset="0dp"
+android:max="100" 
+/>
+
+<ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_toLeftOf="@id/a_seekbar"
+android:layout_alignBottom ="@id/a_seekbar"
+android:background="@drawable/a_icon"
+/>
+
+<Button
+android:id="@+id/save_img" 
+android:background="@drawable/save1"
+android:layout_width="120dp" 
+android:layout_height="60dp"
+android:layout_alignParentBottom="true"
+android:layout_alignParentLeft="true"
+/>
+
+<Button
+android:id="@+id/quit" 
+android:background="@drawable/quit1"
+android:layout_width="120dp" 
+android:layout_height="60dp"
+android:layout_alignParentBottom="true"
+android:layout_alignParentRight="true"
+/>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/camera"   
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal">
+
+<SurfaceView android:id="@+id/surface_camera" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+android:orientation="horizontal"
+android:screenOrientation="landscape" 
+android:layout_weight="1"
+android:layout_marginRight="60dp"  
+/>  
+
+<ImageView 
+android:id="@+id/frame_view"
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+android:scaleType="centerCrop"
+android:layout_marginRight="60dp" 
+/>
+			
+<SeekBar android:id="@+id/seekbar1"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="10dp"
+android:progressDrawable="@drawable/seekbar_img"
+android:thumb="@drawable/thumb"
+android:thumbOffset="0dp"
+android:max="100" 
+/>
+
+<ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_marginTop="10dp"
+android:layout_toRightOf="@id/seekbar1"
+android:background="@drawable/icon1"
+ />
+		
+<ImageView
+android:id="@+id/focus"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_centerInParent="true"
+ />
+	
+<SeekBar android:id="@+id/seekbar2"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_centerHorizontal="true"
+android:layout_alignParentBottom="true"
+android:layout_marginBottom="10dp"
+android:progressDrawable="@drawable/seekbar_img"
+android:thumb="@drawable/thumb"
+android:thumbOffset="0dp"
+android:max="100" 
+/>
+
+<ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_alignParentBottom="true"
+android:layout_marginBottom="10dp"
+android:layout_toRightOf="@id/seekbar2"
+android:background="@drawable/icon2"
+ />
+	
+<ImageButton
+android:id="@+id/shoot_button"
+android:layout_alignParentTop="true" 
+android:layout_alignParentRight="true" 
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/shoot"
+/>
+	
+<ScrollView 
+android:id="@+id/menu_scroll" 
+android:layout_alignParentTop="true" 
+android:layout_alignParentRight="true" 
+android:layout_width="60dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="60dp"
+android:layout_marginBottom="60dp"
+>
+<LinearLayout   
+        android:orientation="vertical"  
+          android:layout_width="wrap_content"    
+          android:layout_height="wrap_content"> 
+<ImageButton
+android:id="@+id/album_button"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/album_icon"
+/>
+<ImageButton
+android:id="@+id/set_button"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/set"
+/>
+
+<ImageButton
+android:id="@+id/flash"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/flash_on"
+/>	
+
+<ImageButton
+android:id="@+id/camera_change"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/front_camera"
+/>	
+
+<ImageButton
+android:id="@+id/frame_button"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/frame_icon"
+/>
+<ImageButton
+android:id="@+id/web_album_button"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/web_album"
+/>
+
+<ImageButton
+android:id="@+id/remote_control"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/nremote"
+/>
+</LinearLayout>
+
+</ScrollView>
+
+<ImageButton
+android:id="@+id/focus_button"
+android:layout_alignParentBottom="true" 
+android:layout_alignParentRight="true" 
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:background="@drawable/focus"
+/>
+
+<Gallery android:id="@+id/frame_gallery"
+  android:layout_centerInParent="true"
+  android:layout_width="400dp"
+  android:layout_height="wrap_content"
+/>	
+		
+</RelativeLayout>
